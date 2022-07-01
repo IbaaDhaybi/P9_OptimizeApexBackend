@@ -3,7 +3,6 @@ public without sharing class VFC01_Team {
         get{
 			AggregateResult groupedResults = [SELECT SUM(TotalAmount) total FROM Order];
 			return (decimal)groupedResults.get('total');
-
         }
         set;
     }
